@@ -1,0 +1,16 @@
+[Unit]
+Description=ARK: Survival Evolved dedicated server
+Wants=network-online.target
+After=syslog.target network.target nss-lookup.target network-online.target
+
+[Service]
+ExecStart=/home/soulivore/Ark/servers/server_Ragnarok_1/ShooterGame/Binaries/Linux/ShooterGameServer Ragnarok?listen?MultiHome=192.168.0.37?Port=7779?QueryPort=27016?MaxPlayers=70?AllowCrateSpawnsOnTopOfStructures=True -ForceAllowCaveFlyers -clusterid=48d6gjdo84t345984h0f843c7h20f4387hcsdf -ClusterDirOverride="/home/soulivore/Ark/cluster" -NoBattlEye -nosteamclient -game -server -log
+WorkingDirectory=/home/soulivore/Ark/servers/server_Ragnarok_1/ShooterGame/Binaries/Linux
+LimitNOFILE=1048576
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -s INT $MAINPID
+User=soulivore
+Group=soulivore
+
+[Install]
+WantedBy=multi-user.target

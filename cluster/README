@@ -1,0 +1,2 @@
+This is where cluster data is stored for clustered servers.
+This directory needs to exist before servers are started.

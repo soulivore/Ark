@@ -1,0 +1,7 @@
+backup/
+cluster/clusters/
+servers/server_*
+
+*.swp
+*#
+.~lock.*

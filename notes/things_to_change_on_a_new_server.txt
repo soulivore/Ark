@@ -1,0 +1,18 @@
+server_<servername>.service:
+    ExecStart line
+        location of ShooterGameServer
+        map
+        port
+        query port
+    WorkingDirectory
+
+GameUserSettings.ini
+    RCONPort
+    ServerPassword
+    ServerAdminPassword
+    SpectatorPassword
+    SessionName
+    Port
+    QueryPort
+
+!!! Make sure Port and QueryPort match between files !!!

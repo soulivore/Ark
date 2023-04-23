@@ -1,0 +1,10 @@
+[Unit]
+Description=Automated backup service for ARK: Survival Evolved servers
+
+[Service]
+ExecStart=/home/soulivore/Ark/scripts/backup_data.sh
+User=soulivore
+Group=soulivore
+
+[Install]
+WantedBy=multi-user.target

@@ -29,7 +29,6 @@ fi
 #    echo "ERROR: unrecognized filepath. Script must be passed one argument, which is the filepath to the server's install directory"
 #fi
 
-echo "updating..."
-echo "installing in $1"
+echo "updating server at $1..."
 steamcmd +force_install_dir $1 +login anonymous +app_update 376030 +quit
 

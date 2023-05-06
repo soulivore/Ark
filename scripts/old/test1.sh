@@ -7,8 +7,12 @@
 
 
 echo "this is test1"
+whoami
 echo $1
 
-#/home/$USER/Ark/scripts/test2.sh "$@"
+#/home/soulivore/Ark/scripts/old/test2.sh "$@"
+/home/soulivore/Ark/scripts/old/test2.sh "asdf"
+
 #su -c '/home/$USER/Ark/scripts/test2.sh "$@"' soulivore 
-exec sudo -u "soulivore" /home/soulivore/Ark/scripts/test2.sh "$@"
+#exec sudo -u "soulivore" /home/soulivore/Ark/scripts/test2.sh "$@"
+

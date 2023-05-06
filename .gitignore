@@ -5,3 +5,4 @@ servers/server_*
 *.swp
 *#
 .~lock.*
+*__pycache__/

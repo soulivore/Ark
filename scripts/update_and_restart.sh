@@ -22,9 +22,10 @@ dirname="${dir##*/}" # just the bottom-level directory name without the path
 
 echo "stopping server..."
 systemctl stop $dirname.service
+sleep 60
 
 scriptarg=$@ su -c '/home/$USER/Ark/scripts/update_server.sh "$scriptarg"' soulivore
 
 echo "restarting server..."
-#systemctl start $dirname.service
+systemctl start $dirname.service
 

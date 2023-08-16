@@ -8,7 +8,7 @@ do
 	
     # copy Game.ini and GameUserSettings.ini
     for filename in Game.ini GameUserSettings.ini; do
-        mkdir -p $targetdir && cp $dir/ShooterGame/Saved/Config/LinuxServer/$filename $targetdir/
+        mkdir -p $targetdir && cp -v $dir/ShooterGame/Saved/Config/LinuxServer/$filename $targetdir/
     done
 
     # copy server_start.sh

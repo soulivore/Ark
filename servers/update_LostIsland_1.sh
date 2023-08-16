@@ -1,8 +1,8 @@
 #!/bin/bash
 
-SERVER_PATH=/home/$USER/Ark/servers/server_Ragnarok_1/
+SERVER_PATH=/home/$USER/Ark/servers/server_LostIsland_1/
 
-# mods
+## mods
 #SUPER_SPYGLASS=793605978
 #STRUCTURES_PLUS=731604991
 #DINO_STORAGE_V2=1609138312

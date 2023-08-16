@@ -13,7 +13,8 @@ START_TIME=600
 
 # place list of servers to be serviced here
 # you might not want to do this with every server
-for servername in TheIsland_1 Ragnarok_1; do
+#for servername in TheIsland_1 Ragnarok_1; do
+for servername in LostIsland_1 Ragnarok_1; do
     
     echo "Updating and restarting $servername"
 

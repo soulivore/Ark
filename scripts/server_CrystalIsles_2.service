@@ -4,7 +4,7 @@ Wants=network-online.target
 After=syslog.target network.target nss-lookup.target network-online.target
 
 [Service]
-ExecStart=/home/soulivore/Ark/servers/server_CrystalIsles_2/ShooterGame/Binaries/Linux/ShooterGameServer CrystalIsles?listen?MultiHome=192.168.0.37?Port=7783?QueryPort=27018?MaxPlayers=70?AllowCrateSpawnsOnTopOfStructures=True -ForceAllowCaveFlyers -clusterid=48d6gjdo84t345984h0f843c7h20f4387hcsdf -ClusterDirOverride="/home/soulivore/Ark/cluster" -NoBattlEye -nosteamclient -game -server -log
+ExecStart=/home/soulivore/Ark/servers/server_CrystalIsles_2/ShooterGame/Binaries/Linux/ShooterGameServer CrystalIsles?listen?MultiHome=192.168.0.37?Port=7783?QueryPort=27018?MaxPlayers=70?AllowCrateSpawnsOnTopOfStructures=True -ForceAllowCaveFlyers -clusterid=48d6gjdo84t345984h0f843c7h20f4387hcsdf -ClusterDirOverride="/home/soulivore/Ark/cluster" -NoBattlEye -nosteamclient -game -server -log -automanagedmods
 WorkingDirectory=/home/soulivore/Ark/servers/server_CrystalIsles_2/ShooterGame/Binaries/Linux
 LimitNOFILE=1048576
 ExecReload=/bin/kill -s HUP $MAINPID

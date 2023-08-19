@@ -1,0 +1,8 @@
+[Unit]
+Description=Automated update and restart service for ARK: Survival Evolved servers
+
+[Service]
+ExecStart=/home/soulivore/Ark/scripts/update_and_restart_all.sh
+
+[Install]
+WantedBy=multi-user.target

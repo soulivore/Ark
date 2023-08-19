@@ -1,0 +1,10 @@
+[Unit]
+Description=Timer to run server_update_and_restart_all.service
+
+[Timer]
+Unit=server_update_and_restart_all.service
+OnCalendar=*-*-* 07:30:00
+Persistent=True
+
+[Install]
+WantedBy=timers.target

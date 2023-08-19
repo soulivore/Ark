@@ -1,10 +1,13 @@
-server_<servername>.service:
+scripts/server_<servername>.service
     ExecStart line
         location of ShooterGameServer
         map
         port
         query port
     WorkingDirectory
+
+servers/update_<servername>.sh
+    SERVER_PATH
 
 GameUserSettings.ini
     RCONPort
@@ -14,5 +17,12 @@ GameUserSettings.ini
     SessionName
     Port
     QueryPort
+    Mods
+
+Game.ini
+    Mods (auto-managed mods list at end of file)
+
+In Ark/servers/server_<servername>/Engine/Binaries/ThirdParty/SteamCMD/, create this symlink:
+    ln -s -T /home/soulivore/.local/share/Steam/steamcmd Linux
 
 !!! Make sure Port and QueryPort match between files !!!

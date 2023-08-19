@@ -1,4 +1,5 @@
-backup/
+backup/cluster
+backup/server*/data
 cluster/clusters/
 servers/server_*
 

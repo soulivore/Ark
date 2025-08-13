@@ -9,7 +9,7 @@ scripts/server_<servername>.service
 servers/update_<servername>.sh
     SERVER_PATH
 
-GameUserSettings.ini
+In Ark/servers/server_<servername>/ShooterGame/Saved/Config/LinuxServer/GameUserSettings.ini
     RCONPort
     ServerPassword
     ServerAdminPassword
@@ -19,7 +19,7 @@ GameUserSettings.ini
     QueryPort
     Mods
 
-Game.ini
+In Ark/servers/server_<servername>/ShooterGame/Saved/Config/LinuxServer/Game.ini
     Mods (auto-managed mods list at end of file)
 
 In Ark/servers/server_<servername>/Engine/Binaries/ThirdParty/SteamCMD/, create this symlink:
